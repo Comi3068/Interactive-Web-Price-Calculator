@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Price Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Interactive Web Price Calculator</h1>
+
+    <form id="calculatorForm">
+
+        <label>Website Type</label>
+        <select id="websiteType">
+            <option value="500">Basic Website ($500)</option>
+            <option value="1000">Business Website ($1000)</option>
+            <option value="2000">E-commerce ($2000)</option>
+        </select>
+
+        <label>Number of Pages: <span id="pagesValue">1</span></label>
+        <input type="range" id="pagesRange" min="1" max="20" value="1">
+
+        <label>Or type number of pages:</label>
+        <input type="number" id="pagesInput" min="1" value="1">
+
+        <label>
+            <input type="checkbox" id="seo">
+            SEO Optimization (+$300)
+        </label>
+
+        <label>
+            <input type="checkbox" id="maintenance">
+            Monthly Maintenance (+$200)
+        </label>
+
+    </form>
+
+    <div class="result">
+        <h2>Total Price:</h2>
+        <p id="total">$0</p>
+        <p class="summary" id="summary"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
