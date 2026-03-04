@@ -13,7 +13,7 @@ Allows users to input values and see real-time calculations. Fully responsive.
 - Vercel (deployment)
 
 ## Screenshot
-![Screenshot](screenshot-calculator.png)
+![Screenshot](interactive-web-price-calculator.PNG)
 
 ## How to Use
 - Open `index.html` in your browser
